@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt install -y software-properties-common dirmngr wget
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu resolute-cran40/"
+sudo apt update
+sudo apt install -y r-base r-base-dev
